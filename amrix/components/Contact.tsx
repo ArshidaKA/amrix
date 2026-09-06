@@ -86,15 +86,15 @@ export default function Contact() {
           <div className="space-y-5">
             <div className="flex items-center gap-3 text-sm">
               <Mail size={16} className="text-[#9db4ff]" />
-              hello@amrix.ai
+              core@amrix-ai.com
             </div>
             <div className="flex items-center gap-3 text-sm">
               <Phone size={16} className="text-[#9db4ff]" />
-              +91 000 000 0000
+              +966 50 084 1538
             </div>
             <div className="flex items-center gap-3 text-sm">
               <MapPin size={16} className="text-[#9db4ff]" />
-              Kozhikode, Kerala, India
+              KSA, UAE, UK, SINGAPORE, INDIA, CANADA
             </div>
           </div>
         </motion.div>

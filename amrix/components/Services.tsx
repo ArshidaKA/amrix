@@ -28,40 +28,46 @@ const services: {
   featured?: boolean;
 }[] = [
   {
+    icon: AuditIcon,
+    title: "AI Strategy, Audit & Governance",
+    desc: "A structured assessment of business opportunities, AI maturity, data readiness, risk, and governance. Produces a prioritized roadmap showing what to implement, in what order, and under which controls.",
+    tags: ["Assessment", "Roadmap", "Governance"],
+    scene: "audit",
+  },
+  {
     icon: AutomationIcon,
-    title: "AI Workflow Automation",
-    desc: "Converts fragmented manual processes into unified, intelligent systems with built-in governance and real-time visibility.",
-    tags: ["RPA", "Governance", "Analytics"],
+    title: "Workflow Automation & Integration",
+    desc: "Redesigns repetitive workflows and connects ERP, CRM, finance, HR, email, messaging, and operational tools into governed automated processes.",
+    tags: ["RPA", "Integration", "Efficiency"],
     scene: "automation",
-    featured: true,
   },
   {
     icon: StudioIcon,
-    title: "AI Solutions Studio",
-    desc: "Custom-built AI systems, copilots, and RAG applications engineered for measurable, production-ready impact.",
-    tags: ["RAG", "Copilots", "Engineering"],
+    title: "AI Agents & Custom Solutions",
+    desc: "Custom AI agents, copilots, RAG systems, predictive solutions, NLP, computer vision, and role-specific productivity systems built around real business use cases.",
+    tags: ["RAG", "Copilots", "NLP"],
     scene: "studio",
+  },
+  {
+    icon: MarketingIcon,
+    title: "Data Intelligence & Reporting",
+    desc: "Connected dashboards, analytics, predictive insight, and automated reporting that turn live operational and customer data into clear decisions.",
+    tags: ["Dashboards", "Analytics", "Predictive"],
+    scene: "marketing",
   },
   {
     icon: DigitalExperienceIcon,
     title: "Digital Experience",
-    desc: "Websites and platforms that pair refined design with AI-powered personalization and conversational interfaces.",
+    desc: "High-performing websites, applications, portals, and conversational interfaces that combine refined design, scalable engineering, and intelligent personalization.",
     tags: ["Web", "Design", "AI UI"],
     scene: "digital",
   },
   {
     icon: MarketingIcon,
-    title: "Marketing Intelligence",
-    desc: "A single, data-grounded view of performance — predictive insights, segmentation, and automated campaigns that compound ROI.",
-    tags: ["Predictive", "Campaigns", "ROI"],
+    title: "Marketing Intelligence & Content Systems",
+    desc: "A connected growth system that unifies marketing data, segmentation, predictive insight, campaign automation, personalization, and governed content production.",
+    tags: ["Growth", "Campaigns", "Content"],
     scene: "marketing",
-  },
-  {
-    icon: AuditIcon,
-    title: "AI Audit",
-    desc: "A structured evaluation of AI systems' accuracy, bias, security, and compliance, with a clear path to scale responsibly.",
-    tags: ["Security", "Compliance", "Scale"],
-    scene: "audit",
   },
 ];
 
@@ -176,7 +182,7 @@ export default function Services() {
                 className="block"
               >
                 <PointerHighlight>
-                  <span>Five disciplines.</span>
+                  <span>Six disciplines.</span>
                 </PointerHighlight>
               </motion.span>
             </span>
