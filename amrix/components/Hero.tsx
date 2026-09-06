@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
-const headline = ["Intelligent systems.", "Measurable impact."];
+const headline = ["INTELLIGENT SYSTEMS", "MEASURABLE IMPACT"];
 
 const container = {
   hidden: {},
@@ -36,7 +36,7 @@ export default function Hero() {
           Left Side (Content)
          ══════════════════════════════════════════════ */}
       <div className="relative flex flex-col justify-center px-8 md:pl-20 md:pr-16 pt-32 pb-16 md:pt-40 md:pb-24 z-10 bg-transparent md:bg-[#0f0f0f]">
-        <div className="max-w-[480px]">
+        <div className="max-w-[580px]">
           {/* eyebrow */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -44,7 +44,7 @@ export default function Hero() {
             transition={{ delay: 0.15, duration: 0.6 }}
             className="text-[10px] md:text-[11px] font-medium tracking-[0.2em] text-[#8a8a8f] mb-8 uppercase"
           >
-            AMRIX | ESTAB 2024 - SING - UK
+            AMRIX | BUILT FOR WHAT'S NEXT
           </motion.p>
 
           {/* headline */}
@@ -59,7 +59,7 @@ export default function Hero() {
               <span key={line} className="block pb-2">
                 <motion.span variants={lineVariant} className="block">
                   {idx === 1 ? (
-                    <PointerHighlight rectangleClassName="border-white/30" pointerClassName="text-white">
+                    <PointerHighlight rectangleClassName="border-white/30 h-[60%]" pointerClassName="text-white">
                       <span>{line}</span>
                     </PointerHighlight>
                   ) : (
@@ -92,7 +92,7 @@ export default function Hero() {
                          bg-[#f4f4f2] text-[#0f0f0f] text-[13px] font-medium px-6 py-3.5
                          transition-all hover:bg-white"
             >
-              Enterprise Intelligence tech
+              Our service 
               <ChevronDown className="size-4 opacity-50" />
             </button>
             <a
