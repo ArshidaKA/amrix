@@ -36,7 +36,7 @@ export function CTA() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSelectService = (service: string) => {
-    window.location.href = `mailto:arshidaakbar39@gmail.com?subject=Inquiry about ${encodeURIComponent(service)}`;
+    window.location.href = `mailto:core@amrix-ai.com?subject=Inquiry about ${encodeURIComponent(service)}`;
     setIsOpen(false);
   };
 

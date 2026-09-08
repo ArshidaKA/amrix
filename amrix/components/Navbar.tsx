@@ -13,22 +13,20 @@ const links = [
 
 function Logo() {
   return (
-    <a
+     <a
       href="#home"
-      className="group flex items-center gap-3"
+      className="group flex items-center"
       aria-label="Amrix home"
     >
-      {/* <motion.img
-        src="/logo.png"
-        alt="Amrix"
-        width={30}
-        height={30}
-        whileHover={{ rotate: 12 }}
-        transition={{ type: "spring", stiffness: 260, damping: 18 }}
-      /> */}
-      <span className="font-display text-lg font-semibold tracking-[0.3em]">
-        A M R I X
-      </span>
+     <motion.img
+  src="/logo.png"
+  alt="Amrix"
+  width={180}
+  height={60}
+  className="h-12 md:h-14 w-auto  object-contain"
+  whileHover={{ scale: 1.03 }}
+  transition={{ type: "spring", stiffness: 260, damping: 18 }}
+/>
     </a>
   );
 }
@@ -51,8 +49,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? "bg-[#050505]/80 backdrop-blur-md border-b border-white/10" : "bg-transparent"
         }`}
     >
-      <div className="mx-auto max-w-7xl px-6 md:px-10 flex items-center justify-between h-20">
-        <Logo />
+<div className="mx-auto max-w-7xl px-3 md:px-6 flex items-center justify-between h-20">        <Logo />
 
         <nav className="hidden md:flex items-center gap-10">
           {links.map((l) => (
